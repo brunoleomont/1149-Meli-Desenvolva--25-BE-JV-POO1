@@ -6,6 +6,10 @@ public class Guerreiro extends Personagem {
     }
 
     public void atacar() {
-        System.out.println("Ataque ao inimigo");
+        System.out.println("Guerreiro ataque ao inimigo com uma espada");
+    }
+
+    void furiaberserker() {
+
     }
 }
