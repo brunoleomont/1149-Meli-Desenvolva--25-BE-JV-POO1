@@ -10,24 +10,24 @@ public class Main {
                 "978-85-336-0314-9",
                 1200);
 
-        System.out.println("<--- Meu Livro --->");
-        meuLivro.exibirDetalhes();
+//        System.out.println("<--- Meu Livro --->");
+//        meuLivro.exibirDetalhes();
 
-        System.out.println("----------------------");
+//        System.out.println("----------------------");
 
         Revista minhaRevista = new Revista(
                 "National Geographic",
                 "National Geographic Society",
-                -25.00,
+                25.00,
                 2024,
                 105,
                 "Mensal");
 
-        minhaRevista.setPreco(25);
-        System.out.println("<--- Minha Revista --->");
-        minhaRevista.exibirDetalhes();
+//        minhaRevista.setPreco(25);
+//        System.out.println("<--- Minha Revista --->");
+//        minhaRevista.exibirDetalhes();
 
-        System.out.println("----------------------");
+//        System.out.println("----------------------");
 
         Ebook meuEbook = new Ebook(
                 "Clean Code",
@@ -38,7 +38,18 @@ public class Main {
                 15.7
         );
 
-        System.out.println("<--- Meu Ebook --->");
-        meuEbook.exibirDetalhes();
+//        System.out.println("<--- Meu Ebook --->");
+//        meuEbook.exibirDetalhes();
+
+        Livraria livraria = new Livraria();
+        livraria.adicionarItemLivraria(meuLivro); // 0
+        livraria.adicionarItemLivraria(minhaRevista); // 1
+        livraria.adicionarItemLivraria(meuEbook); // 2
+//        livraria.listarItens();
+//        ItemLivraria itemRetornado = livraria.buscarItem("Clean Code");
+//        if (itemRetornado != null) {
+//            itemRetornado.exibirDetalhes();
+//        }
+        livraria.exibirMenu();
     }
 }
